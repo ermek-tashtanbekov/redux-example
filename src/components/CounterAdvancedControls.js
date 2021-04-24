@@ -21,6 +21,7 @@ const CounterAdvancedControls = () => {
                 <input type="number" onChange={({ target }) => setNumber(target.value)} />
                 <button onClick={setCallback}>add</button>
             </div>
+            <br/>
             <div>
                 <input type="number" onChange={({target})=> setNumber1(target.value)} />
                 +

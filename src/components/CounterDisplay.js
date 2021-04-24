@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 
 const CounterDisplay = () => {
-    const num = useSelector(state => state.number)
+    const num = useSelector(state => state.counter.number)
     return ( 
        <h1>{num}</h1>
      );

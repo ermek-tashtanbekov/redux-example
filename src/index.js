@@ -8,7 +8,9 @@ import { Provider } from 'react-redux';
 import counterReducers from './redux/counterReducers'
 import colorReduser from './redux/colorReduser'
 
-const rootReduse = combineReducers(counterReducers, colorReduser)
+const rootReduse = combineReducers({
+  counter:  counterReducers,
+  color:   colorReduser})
 const store = createStore(rootReduse)
 ReactDOM.render(
   <React.StrictMode>
