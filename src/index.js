@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {createStore} from 'redux'
+import {createStore, combineReducers} from 'redux'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import counterReducers from './redux/counterReducers'
-const store = createStore(counterReducers)
+import colorReduser from './redux/colorReduser'
+
+const rootReduse = combineReducers(counterReducers, colorReduser)
+const store = createStore(rootReduse)
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
