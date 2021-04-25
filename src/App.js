@@ -6,6 +6,8 @@ import CounterAdvancedControls from './components/CounterAdvancedControls';
 import CounterDisplay from './components/CounterDisplay';
 import CounterSimpleControls from './components/CounterSimpleControls';
 import SliderControls from './components/SliderControls';
+import TextDisplay from './components/TextDisplay';
+import TextSimpleControls from './components/TextSimpleControls';
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
      <br/>
      <ColorSimple/>
      <SliderControls/>
+     <br/>
+     <TextDisplay/>
+     <TextSimpleControls/>
     </div>
   );
 }

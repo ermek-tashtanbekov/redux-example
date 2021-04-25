@@ -15,7 +15,7 @@ function Slider(){
 
     return ( 
         <div>
-            <input type="range" max={360} min={0} onChange={({target}) => {setR(target.value); Slider()}}/>
+            <input type="range" max={360} min={0}  onChange={({target}) => {setR(target.value); Slider()}}/>
             <input type="range"max={360} min={0} onChange={({target}) => {setG(target.value); Slider()}}/>
             <input type="range" max={360} min={0} onChange={({target}) => {setB(target.value); Slider()}}/>
             
